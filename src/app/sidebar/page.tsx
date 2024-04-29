@@ -23,14 +23,14 @@ export default function Sidebar() {
     <>
         
 
-       <div className="bg-white text-2xl h-[20px] absolute flex flex-row items-center py-4 w-screen">
+       <div className="bg-white text-2xl h-[20px] absolute flex flex-row items-center py-4 w-screen xl:hidden">
         <button className="px-5" onClick={handleSide}>{isSideOpen ? <FaTimes  />:<FaBars />}</button>
         <p>History</p>
       </div> 
 
         {isSideOpen && (
           
-      <div className="bg-white h-full w-[80%] xl:w-[17%]  flex-col pt-10 xl:hidden absolute" id="my-div">
+      <div className="bg-white h-full w-[80%] xl:w-[17%]  flex-col pt-10 xl:hidden absolute" >
         <button className="text-2xl mx-8 mb-8" onClick={handleSideClose}><FaTimes /></button>
         <button className="py-2 rounded-lg px-2 border border-black flex text-sm items-center space-x-3 w-[40%] mx-8"><FaPlus /> <span>Prepare Speech</span></button>
 
